@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "neutrino start",
+    "build": "neutrino build"
+  },
+  "devDependencies": {
+    "neutrino": "^6.1.4",
+    "neutrino-preset-react": "^6.1.4"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-polymer": "^4.0.0"
+  }
+}

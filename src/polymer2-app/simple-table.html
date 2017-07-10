@@ -1,4 +1,3 @@
-
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
 <link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
@@ -8,7 +7,6 @@
 <link rel="import" href="../../bower_components/paper-datatable-api/paper-datatable-api-column.html">
 
 <dom-module id="simple-table">
-
   <template>
 
     <style include="iron-flex iron-flex-alignment"></style>
@@ -24,30 +22,28 @@
 
     <div class="layout horizontal center-justified">
       <div>
-        <iron-ajax auto url="../../data/data.json" last-response="{{data}}"></iron-ajax>
-
-            <paper-datatable-api data="[[data]]">
-              <paper-datatable-api-column header="Fruit" property="fruit" other-properties='["color"]'>
-                <template>
-                  <span>[[value]], color: [[otherValues.color]]</span>
-                </template>
-              </paper-datatable-api-column>
-              <paper-datatable-api-column header="Weight (kg)" property="weight">
-                <template>
-                  <span>[[value.kg]]</span>
-                </template>
-              </paper-datatable-api-column>
-              <paper-datatable-api-column header="Weight (gr)" property="weight.gr">
-                <template>
-                  <span>[[value]]</span>
-                </template>
-              </paper-datatable-api-column>
-              <paper-datatable-api-column header="Hidden by default" property="hiddenColumn" hideable>
-                <template>
-                  <span>[[value]]</span>
-                </template>
-              </paper-datatable-api-column>
-            </paper-datatable-api>
+		<paper-datatable-api data="{{data}}">
+		  <paper-datatable-api-column header="Fruit" property="fruit" other-properties='["color"]'>
+			<template>
+			  <span>[[value]], color: [[otherValues.color]]</span>
+			</template>
+		  </paper-datatable-api-column>
+		  <paper-datatable-api-column header="Weight (kg)" property="weight">
+			<template>
+			  <span>[[value.kg]]</span>
+			</template>
+		  </paper-datatable-api-column>
+		  <paper-datatable-api-column header="Weight (gr)" property="weight.gr">
+			<template>
+			  <span>[[value]]</span>
+			</template>
+		  </paper-datatable-api-column>
+		  <paper-datatable-api-column header="Hidden by default" property="hiddenColumn" hideable>
+			<template>
+			  <span>[[value]]</span>
+			</template>
+		  </paper-datatable-api-column>
+		</paper-datatable-api>
       </div>
     </div>
   </template>
