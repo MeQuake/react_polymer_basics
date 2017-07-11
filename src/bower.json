@@ -16,8 +16,9 @@
     "tests"
   ],
   "dependencies": {
-	"polymer": "Polymer/polymer#^2.0.0",
-    "paper-datatable-api": "^2.0.5"
+    "polymer": "Polymer/polymer#^2.0.0",
+    "paper-datatable-api": "^2.0.5",
+    "google-chart": "^1.1.2"
   },
   "devDependencies": {
     "web-component-tester": "Polymer/web-component-tester#^6.0.0",

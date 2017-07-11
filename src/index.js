@@ -74,8 +74,14 @@ function App () {
   c.render = () => (
     <div>
       <h1>react-polymer demo</h1>
-	  
+
 	  <simple-table data={c.state.tableData}></simple-table>
+    <google-chart
+    type='line'
+    options='{"title": "Distribution of days in 2001Q1"}'
+    cols='[{"label":"Month", "type":"string"}, {"label":"Days", "type":"number"}]'
+    rows='[["Jan", 31],["Feb", 28],["Mar", 31]]'>
+    </google-chart>
     </div>
   )
   return c
